@@ -1,7 +1,7 @@
 TeleportService = game:GetService("TeleportService")
 http = game:GetService("HttpService")
 Pinged = false
-disk_url = "https://discordapp.com/api/webhooks/615272181974171825/_Vb6EdFbfY69bGSS7tmGvl1hhun_brmFxAYfE3m" .. "9cCwDUQGNtfX8ZSNqn4ql165ZtgVr"
+disk_url = "https://discordapp.com/api/webhooks/674452993008992346/Gx6gTRjZKzkG0EPfSBMmRcUG3S" .. "gp1_Oash3yv7OE7aTSaxLO-Um7X232pwEPd9rHi5B6"
 
 if game.Chat.Name == "Chat" then
 	game.Chat.Name = "Activated"
